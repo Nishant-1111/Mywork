@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<body>
+<p id="demo">
+	<script>
+	class Hello
+	{
+		constructor(brand)
+		{
+			this.brandQuality=brand;
+		}
+		present()
+		{
+			return "I have " + this.brandQuality;
+		}
+	}
+	class Model extends Hello
+	{
+		constructor(brand,model)
+		{
+			super(brand);
+			this.mod=model;
+
+		}
+		present1()
+		{
+
+			return "I have " + super.present() + " </br> " +  this.mod;
+		}
+	}
+	brandName1 = new Model("Raymond",1980);
+	document.getElementById("demo").innerHTML=brandName1.present1();	
+		
+	</script>
+	
+</body>
+</html>		
