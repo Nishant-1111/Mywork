@@ -2,6 +2,7 @@
     { 
         int j=0;
         int k=0;
+        int o=0
         for(int i=0;i<newBooks.length;i++)
         {
             if(newBooks[i].getPrice()>=minPrice && newBooks[i].getPrice()<=maxPrice)
