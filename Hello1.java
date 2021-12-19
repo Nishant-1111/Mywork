@@ -1,6 +1,7 @@
  public static double generateBill(Cake[] c)
      {
          double totalAmount=0;
+         int o=0;
          for(int i=0;i<c.length;i++)
          {
              if(c[i].getEggless())
